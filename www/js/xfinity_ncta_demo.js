@@ -163,7 +163,7 @@ $$(document).on('pageInit', function (e) {
                             ' </div>' +
                             ' <article>' +
                             ' <span>Xfinity X1 TV and blazing fast internet is avialable at your new home!</span></br>' +
-                            ' <a href="hello.html">Learn about transfering service</a>' +
+                            ' <a href="hello.html">Learn about transferring service</a>' +
                             ' </article>' +
                             ' <div class="item-content2">' +
                             ' <div class="item-inner">' +
