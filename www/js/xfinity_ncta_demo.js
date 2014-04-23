@@ -1,40 +1,26 @@
 var myApp = new Framework7({
     onBeforePageInit: function (page) {
-        // Do something when page just added to DOM
-        // console.log(page);
     },
     onPageInit: function (page) {
-        // Do something on page init
-        // console.log(page);
     },
     onPageAfterAnimation: function (page) {
-        // Do something on page before animation start
-        // console.log(page);
     },
     onPageBeforeAnimation: function (page) {
-        // Do something on page ready(centered)
-        // console.log(page);
     }
 });
 
-// Expose Internal DOM library
 var $$ = myApp.$;
 
-// Add main view
 var mainView = myApp.addView('.view-main', {
-    // Enable Dynamic Navbar for this view
     dynamicNavbar: true
 });
-// Add another view, which is in right panel
 var rightView = myApp.addView('.view-right', {
-    // Enable Dynamic Navbar for this view
     dynamicNavbar: true
 });
 
 // Events for specific pages when it initialized
 $$(document).on('pageInit', function (e) {
     var page = e.detail.page;
-    // Handle Modals Page event when it is init
     if (page.name === 'modals') {
         $$('.demo-alert').tap(function () {
             myApp.alert('Hello!');
@@ -46,7 +32,6 @@ $$(document).on('pageInit', function (e) {
         });
         $$('.demo-prompt').tap(function () {
             myApp.prompt('What is your name?', function (data) {
-                // @data contains input value
                 myApp.confirm('Are you sure that your name is ' + data + '?', function () {
                     myApp.alert('Ok, your name is ' + data + ' ;)');
                 });
@@ -84,21 +69,17 @@ $$(document).on('pageInit', function (e) {
     if (page.name === 'swipe-delete' || page.name === 'modals') {
         $$('.demo-actions').tap(function () {
             myApp.actions([
-                // First buttons group
                 [
-                    // Group Label
                     {
                         text: 'Here comes some optional description or warning for actions below',
                         label: true
                     },
-                    // First button
                     {
                         text: 'Alert',
                         onClick: function () {
                             myApp.alert('He Hoou!');
                         }
                     },
-                    // Another red button
                     {
                         text: 'Nice Red Button ',
                         red: true,
@@ -107,7 +88,6 @@ $$(document).on('pageInit', function (e) {
                         }
                     },
                 ],
-                // Second group
                 [
                     {
                         text: 'Cancel',
@@ -135,9 +115,8 @@ $$(document).on('pageInit', function (e) {
             var input = $$(this).find('.ks-messages-input');
             var messageText = input.val();
             if (messageText.length === 0) return;
-            // Empty input
             input.val('');
-            // Add Message
+
             myApp.addMessage({
                 text: messageText,
                 type: 'sent',
@@ -145,7 +124,7 @@ $$(document).on('pageInit', function (e) {
                 time: !conversationStarted ? (new Date()).getHours() + ':' + (new Date()).getMinutes() : false
             });
             conversationStarted = true;
-            // Add answer after timeout
+
             if (answerTimeout) clearTimeout(answerTimeout);
             answerTimeout = setTimeout(function () {
                 myApp.addMessage({
@@ -160,12 +139,12 @@ $$(document).on('pageInit', function (e) {
     }
     // Pull To Refresh Demo
     if (page.name === 'pull-to-refresh') {
-        // Dummy Content
+
         var songs = ['Yellow Submarine', 'Don\'t Stop Me Now', 'Billie Jean', 'Californication'];
         var authors = ['Beatles', 'Queen', 'Michael Jackson', 'Red Hot Chili Peppers'];
-        // Pull to refresh content
+
         var ptrContent = $$(page.container).find('.pull-to-refresh-content');
-        // Add 'refresh' listener on it
+
         ptrContent.on('refresh', function (e) {
             // Emulate 2s loading
             setTimeout(function () {
@@ -197,7 +176,6 @@ $$(document).on('pageInit', function (e) {
                             ' </div>' +
                             ' </li>';
                 ptrContent.find('ul.new-post').prepend(linkHTML);
-                // When loading done, we need to "close" it
                 myApp.pullToRefreshDone();
             }, 2000);
         });
@@ -207,32 +185,23 @@ $$(document).on('pageInit', function (e) {
     if (page.name === 'disconnect-date'){
 
             window.onload = function () {
-                /* Grab all elements with a placeholder attribute */
                 var element = document.querySelectorAll('[placeholder]');
 
-                /* Loop through each found elements */
                 for (var i in element) {
-                    /* If the element is a DOMElement and has the nodeName "INPUT" */
                     if (element[i].nodeType == 1 && element[i].nodeName == "INPUT") {
 
-                        /* We change the value of the element to its placeholder attr value */
                         element[i].value = element[i].getAttribute('placeholder');
-                        /* We change its color to a light gray */
                         element[i].style.color = "#777";
 
-                        /* When the input is selected/clicked on */
                         element[i].onfocus = function (event) {
-                            /* If the value within it is the placeholder, we clear it */
                             if (this.value == this.getAttribute('placeholder')) {
                                 this.value = "";
-                                /* Setting default text color */
                                 this.style.color = "#000";
                             };
                         };
 
                         /* We the input is left */
                         element[i].onblur = function (event) {
-                            /* If the field is empty, we set its value to the placeholder */
                             if (this.value == "") {
                                 this.value = this.getAttribute('placeholder');
                                 this.style.color = "#777";
@@ -304,6 +273,57 @@ $$(document).on('pageInit', function (e) {
         },3000);
     }
 
+    if (page.name === 'transfer-network') {
+
+        var blockHTML ='<div class="content-block content-block-app-welcome">' +
+                        '<div class="content-block-inner app-inner app-new-address">' +
+                        '<h1 style="padding:20px 20px 10px 0;">Devices connected to your Wireless Gateway </h1>' +
+                        '<div class="app-list-devices">' +
+                        '<div class="list-block media-list device-list">' +
+                        '<ul>' +
+                        '<li><a href="#" class="item-link item-content">' +
+                        '<div class="red-cross"></div>' +
+                        '<div class="arrow"></div>' +
+                        '<div class="item-media"><img src="img/dl-laptop@2x.png" width="80"></div>' +
+                        '<div class="item-inner">' +
+                        '<div class="item-title">David’s Laptop</div>' +
+                        '<div class="item-subtitle" style="color:#f37a03; font-style: italic;">Connection lost</div>' +
+                        '</div></a></li>' +
+                        '<li><a href="#" class="item-link item-content">' +
+                        '<div class="red-cross"></div>' +
+                        '<div class="item-media"><img src="img/dl-print@2x.png" width="80"></div>' +
+                        '<div class="item-inner">' +
+                        '<div class="item-title">David’s Printer</div>' +
+                        '<div class="item-subtitle" style="color:#f37a03; font-style: italic;">Connection lost</div>' +
+                        '</div></a>' +
+                        '</li>' +
+                        '<li><a href="#" class="item-link item-content">' +
+                        '<div class="arrow"></div>' +
+                        '<div class="red-cross"></div>' +
+                        '<div class="item-media"><img src="img/dl-phone@2x.png" width="80"></div>' +
+                        '<div class="item-inner">' +
+                        '<div class="item-title">David’s Phone</div>' +
+                        '<div class="item-subtitle" style="color:#f37a03; font-style: italic;">Connection lost</div>' +
+                        '</div></a></li>' +
+                        '</ul>' +
+                        '</br><a href="transfer-recconect.html" class="button button-inner button-big active success">Reconnect your devices</a>' +
+                        '</div>' +
+                        '</div>' +
+                        '</div>' +
+                        '</div>';
+
+        setTimeout(function() {
+        $('.network-scanned').fadeOut('fast');
+            setTimeout(function() {
+                var ptrContent = $$(page.container).find('.scanning');
+                $('.scanning').addClass('lightUI');
+                $('.scanning').removeClass('itUI');
+                ptrContent.prepend(blockHTML);
+            },1000);
+
+        },3000);
+    }
+
     if (page.name === 'it-scan-list'){
         $$('.success').on('tap',function(){
             window.location.replace("it_scan_printer.html");
@@ -325,6 +345,26 @@ $$(document).on('pageInit', function (e) {
                 var ptrContent = $$(page.container).find('.scann-list');
                 ptrContent.prepend(successBlock);
                 $('.print_profile_success').fadeIn('slow');
+            },1000);
+
+        },3000);
+    }
+
+    if (page.name === 'transfer-scan') {
+
+        var successBlock = '<div class="content-block-inner app-inner scann-inner">' +
+                           ' <h1>Success!</h1>' +
+                           ' <div class="gray">Your network has been transferred</div></br>' +
+                           ' <div class="network_success"></div></br>' +
+                           ' <a href="splash2.html" class="button button-big active">Done</a>' +
+                           ' </div>';
+
+        setTimeout(function() {
+                $('.list-success').fadeOut('fast');
+            setTimeout(function() {
+                var ptrContent = $$(page.container).find('.scann-list');
+                ptrContent.prepend(successBlock);
+                $('.network_success').fadeIn('slow');
             },1000);
 
         },3000);

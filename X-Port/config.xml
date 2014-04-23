@@ -27,6 +27,9 @@
         NBCU Media Labs - Xfinity Team
     </author>
     <feature name="http://api.phonegap.com/1.0/device" />
+    <feature name="StatusBar">
+        <param name="ios-package" onload="true" value="CDVStatusBar" />
+    </feature>
     <preference name="permissions" value="none" />
     <preference name="orientation" value="portrait" />
     <preference name="target-device" value="iphone" />
@@ -34,7 +37,7 @@
     <preference name="webviewbounce" value="true" />
     <preference name="prerendered-icon" value="true" />
     <preference name="stay-in-webview" value="false" />
-    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="ios-statusbarstyle" value="default" />
     <preference name="detect-data-types" value="true" />
     <preference name="exit-on-suspend" value="false" />
     <preference name="show-splash-screen-spinner" value="true" />
@@ -42,11 +45,14 @@
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarBackgroundColor" value="#000000" />
     <icon src="icon.png" />
     <icon gap:platform="ios" height="57" src="res/icon/ios/icon-57.png" width="57" />
     <icon gap:platform="ios" height="72" src="res/icon/ios/icon-72.png" width="72" />
     <icon gap:platform="ios" height="114" src="res/icon/ios/icon-57-2x.png" width="114" />
     <icon gap:platform="ios" height="144" src="res/icon/ios/icon-72-2x.png" width="144" />
     <gap:splash gap:platform="ios" height="1136" src="res/screen/ios/screen-iphone-portrait-568h-2x.png" width="640" />
+    <gap:plugin name="com.phonegap.plugin.statusbar" />
     <access origin="http://127.0.0.1*" />
 </widget>

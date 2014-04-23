@@ -7,3 +7,33 @@
 2014-04-22 14:33:54.980 X-Port[5714:70b] Multi-tasking -> Device: YES, App: YES
 2014-04-22 14:33:55.123 X-Port[5714:70b] Resetting plugins due to page load.
 2014-04-22 14:33:55.336 X-Port[5714:70b] Finished load of: file:///Users/Vlad/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/C6D2B43F-8AB0-413E-A2D5-CA2AECF485B9/X-Port.app/www/index.html
+2014-04-22 15:07:52.480 X-Port[7609:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-22 15:07:52.548 X-Port[7609:70b] [CDVTimer][statusbar] 18.473983ms
+2014-04-22 15:07:52.548 X-Port[7609:70b] [CDVTimer][TotalPluginStartup] 19.092023ms
+2014-04-22 15:07:52.675 X-Port[7609:70b] Resetting plugins due to page load.
+2014-04-22 15:07:52.845 X-Port[7609:70b] Finished load of: file:///Users/Vlad/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/C6D2B43F-8AB0-413E-A2D5-CA2AECF485B9/X-Port.app/www/index.html
+2014-04-22 15:10:24.133 X-Port[7957:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-22 15:10:24.175 X-Port[7957:70b] [CDVTimer][statusbar] 9.613991ms
+2014-04-22 15:10:24.175 X-Port[7957:70b] [CDVTimer][TotalPluginStartup] 10.159969ms
+2014-04-22 15:10:24.290 X-Port[7957:70b] Resetting plugins due to page load.
+2014-04-22 15:10:24.450 X-Port[7957:70b] Finished load of: file:///Users/Vlad/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/C6D2B43F-8AB0-413E-A2D5-CA2AECF485B9/X-Port.app/www/index.html
+2014-04-22 15:12:56.174 X-Port[8346:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-22 15:12:56.215 X-Port[8346:70b] [CDVTimer][statusbar] 9.252012ms
+2014-04-22 15:12:56.216 X-Port[8346:70b] [CDVTimer][TotalPluginStartup] 9.842992ms
+2014-04-22 15:12:56.329 X-Port[8346:70b] Resetting plugins due to page load.
+2014-04-22 15:12:56.522 X-Port[8346:70b] Finished load of: file:///Users/Vlad/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/C6D2B43F-8AB0-413E-A2D5-CA2AECF485B9/X-Port.app/www/index.html
+2014-04-22 15:14:52.249 X-Port[8828:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-22 15:14:52.293 X-Port[8828:70b] [CDVTimer][statusbar] 10.299981ms
+2014-04-22 15:14:52.294 X-Port[8828:70b] [CDVTimer][TotalPluginStartup] 10.932028ms
+2014-04-22 15:14:52.420 X-Port[8828:70b] Resetting plugins due to page load.
+2014-04-22 15:14:52.554 X-Port[8828:70b] Finished load of: file:///Users/Vlad/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/C6D2B43F-8AB0-413E-A2D5-CA2AECF485B9/X-Port.app/www/index.html
+2014-04-22 15:18:55.179 X-Port[9322:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-22 15:18:55.231 X-Port[9322:70b] [CDVTimer][statusbar] 20.639002ms
+2014-04-22 15:18:55.231 X-Port[9322:70b] [CDVTimer][TotalPluginStartup] 21.215975ms
+2014-04-22 15:18:55.343 X-Port[9322:70b] Resetting plugins due to page load.
+2014-04-22 15:18:55.610 X-Port[9322:70b] Finished load of: file:///Users/Vlad/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/C6D2B43F-8AB0-413E-A2D5-CA2AECF485B9/X-Port.app/www/index.html
+2014-04-22 17:25:12.319 X-Port[1097:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-22 17:25:12.366 X-Port[1097:70b] [CDVTimer][statusbar] 8.332014ms
+2014-04-22 17:25:12.367 X-Port[1097:70b] [CDVTimer][TotalPluginStartup] 8.859992ms
+2014-04-22 17:25:12.484 X-Port[1097:70b] Resetting plugins due to page load.
+2014-04-22 17:25:12.679 X-Port[1097:70b] Finished load of: file:///Users/Vlad/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/C6D2B43F-8AB0-413E-A2D5-CA2AECF485B9/X-Port.app/www/index.html

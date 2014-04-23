@@ -22,6 +22,10 @@
     -->
     <feature name="http://api.phonegap.com/1.0/device" />
 
+    <feature name="StatusBar">
+            <param name="ios-package" value="CDVStatusBar" onload="true" />
+    </feature>
+
     <!--
         If you do not want any permissions to be added to your app, add the
         following tag to your config.xml; you will still have the INTERNET
@@ -37,7 +41,7 @@
     <preference name="webviewbounce"              value="true" />           <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
     <preference name="prerendered-icon"           value="true" />           <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
     <preference name="stay-in-webview"            value="false" />          <!-- ios: external links should open in the default browser, 'true' would use the webview the app lives in -->
-    <preference name="ios-statusbarstyle"         value="black-opaque" />   <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
+    <preference name="ios-statusbarstyle"         value="default" />   <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
     <preference name="detect-data-types"          value="true" />           <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
     <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
     <preference name="show-splash-screen-spinner" value="true" />           <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
@@ -45,6 +49,9 @@
     <preference name="disable-cursor"             value="false" />          <!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
     <preference name="android-minSdkVersion"      value="7" />              <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
+    <!--     status bar options -->
+    <preference name="StatusBarOverlaysWebView"   value="false" />
+    <preference name="StatusBarBackgroundColor"   value="#000000" />
 
     <!-- Plugins can also be added here. -->
     <!--
@@ -61,6 +68,7 @@
 
     <!-- Define app splash screen for each platform. -->
     <gap:splash src="res/screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios" width="640" height="1136" />
+    <gap:plugin name="com.phonegap.plugin.statusbar" />
 
     <!--
         Define access to external domains.

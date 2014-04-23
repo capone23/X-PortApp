@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4E9A9880-8CE3-4BC6-9F2F-0E9A25CB8D01</string>
+	<key>IDESourceControlProjectName</key>
+	<string>X-Port</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BB50204B-2123-4B65-9704-58C8C012F753</key>
+		<string>https://github.com/capone23/X-PortApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>X-Port.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BB50204B-2123-4B65-9704-58C8C012F753</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/capone23/X-PortApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BB50204B-2123-4B65-9704-58C8C012F753</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BB50204B-2123-4B65-9704-58C8C012F753</string>
+			<key>IDESourceControlWCCName</key>
+			<string>X-PortApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
