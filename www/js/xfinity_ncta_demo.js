@@ -255,6 +255,31 @@ $$(document).on('pageInit', function (e) {
                         '<div class="item-title">David’s Phone</div>' +
                         '<div class="item-subtitle gray">Connected</div>' +
                         '</div></a></li>' +
+                        '<li><a href="#" class="item-link item-content">' +
+                        '<div class="arrow"></div>' +
+                        '<div class="green-check"></div>' +
+                        '<div class="item-media"><img src="img/dl-ipad@2x.png" width="80"></div>' +
+                        '<div class="item-inner">' +
+                        '<div class="item-title">Laura’s iPad</div>' +
+                        '<div class="item-subtitle gray">Connected</div>' +
+                        '</div></a></li>' +
+                        '<li><a href="#" class="item-link item-content">' +
+                        '<div class="arrow"></div>' +
+                        '<div class="green-check"></div>' +
+                        '<div class="item-media"><img src="img/dl-phone@2x.png" width="80"></div>' +
+                        '<div class="item-inner">' +
+                        '<div class="item-title">Laura’s iPhone</div>' +
+                        '<div class="item-subtitle gray">Connected</div>' +
+                        '</div></a></li>' +
+                        '<li><a href="#" class="item-link item-content">' +
+                        '<div class="arrow"></div>' +
+                        '<div class="green-check"></div>' +
+                        '<div class="item-media"><img src="img/dl-phone@2x.png" width="80"></div>' +
+                        '<div class="item-inner">' +
+                        '<div class="item-title">Kathy’s iPhone</div>' +
+                        '<div class="item-subtitle gray">Connected</div>' +
+                        '</div></a></li>' +
+
                         '</ul>'  +
                         '</div>' +
                         '</div>' +
@@ -291,6 +316,7 @@ $$(document).on('pageInit', function (e) {
                         '</div></a></li>' +
                         '<li><a href="#" class="item-link item-content">' +
                         '<div class="red-cross"></div>' +
+                        '<div class="arrow"></div>' +
                         '<div class="item-media"><img src="img/dl-print@2x.png" width="80"></div>' +
                         '<div class="item-inner">' +
                         '<div class="item-title">David’s Printer</div>' +
@@ -303,6 +329,30 @@ $$(document).on('pageInit', function (e) {
                         '<div class="item-media"><img src="img/dl-phone@2x.png" width="80"></div>' +
                         '<div class="item-inner">' +
                         '<div class="item-title">David’s Phone</div>' +
+                        '<div class="item-subtitle" style="color:#f37a03; font-style: italic;">Connection lost</div>' +
+                        '</div></a></li>' +
+                        '<li><a href="#" class="item-link item-content">' +
+                        '<div class="arrow"></div>' +
+                        '<div class="red-cross"></div>' +
+                        '<div class="item-media"><img src="img/dl-ipad@2x.png" width="80"></div>' +
+                        '<div class="item-inner">' +
+                        '<div class="item-title">Laura’s iPad</div>' +
+                        '<div class="item-subtitle" style="color:#f37a03; font-style: italic;">Connection lost</div>' +
+                        '</div></a></li>' +
+                        '<li><a href="#" class="item-link item-content">' +
+                        '<div class="arrow"></div>' +
+                        '<div class="red-cross"></div>' +
+                        '<div class="item-media"><img src="img/dl-phone@2x.png" width="80"></div>' +
+                        '<div class="item-inner">' +
+                        '<div class="item-title">Laura’s iPhone</div>' +
+                        '<div class="item-subtitle" style="color:#f37a03; font-style: italic;">Connection lost</div>' +
+                        '</div></a></li>' +
+                        '<li><a href="#" class="item-link item-content">' +
+                        '<div class="arrow"></div>' +
+                        '<div class="red-cross"></div>' +
+                        '<div class="item-media"><img src="img/dl-phone@2x.png" width="80"></div>' +
+                        '<div class="item-inner">' +
+                        '<div class="item-title">Kathy’s iPhone</div>' +
                         '<div class="item-subtitle" style="color:#f37a03; font-style: italic;">Connection lost</div>' +
                         '</div></a></li>' +
                         '</ul>' +
